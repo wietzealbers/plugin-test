@@ -30,3 +30,6 @@ De Tessera-app voert de HTTPS-aanroep uit; **het ESP32-scherm haalt de gegevens 
 API: https://api.anwb.nl/routing/points-of-interest/v3/all
 
 Zie de officiële [Tessera fetch-documentatie](https://github.com/MaxGramser/tessera-plugins/blob/main/docs/FETCH.md).
+
+## Privacy
+This plugin fetches public station information from `api.anwb.nl` over HTTPS. ANWB may receive the public IP address of the requesting network and standard HTTP request metadata. The plugin does not send Home Assistant entities or user-provided personal data. ANWB privacy statement: https://www.anwb.nl/jouw-privacy
