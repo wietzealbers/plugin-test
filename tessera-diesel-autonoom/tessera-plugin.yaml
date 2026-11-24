@@ -1,0 +1,42 @@
+id: dieselprijzen
+version: 0.2.0
+api: "0.27"
+icon: gas-station
+maintainer: community
+license: MIT
+stage: beta
+topics: [travel, money]
+requires:
+  esphome: 2026.6.2
+boards: any
+flash_kb: 16
+permissions:
+  network: [api.anwb.nl]
+tiles:
+  - id: prices
+    name: tile_name
+    icon: gas-station
+    sizes: { min: 2x2, max: 4x4 }
+    memory: 2400
+    data: anwb_diesel
+    example: tile_example
+fetch:
+  - id: anwb_diesel
+    url: "https://api.anwb.nl/routing/points-of-interest/v3/all?type-filter=FUEL_STATION&bounding-box-filter=52.9203%2C6.5033%2C53.1903%2C6.9513"
+    every: 1h
+    map:
+      items: "$.value[*]"
+      fields:
+        name: "title"
+        city: "address.city"
+        lat: { path: coordinates.latitude, as: number }
+        lon: { path: coordinates.longitude, as: number }
+        type0: "prices[0].fuelType"
+        value0: { path: "prices[0].value", as: number }
+        type1: "prices[1].fuelType"
+        value1: { path: "prices[1].value", as: number }
+        type2: "prices[2].fuelType"
+        value2: { path: "prices[2].value", as: number }
+        type3: "prices[3].fuelType"
+        value3: { path: "prices[3].value", as: number }
+      limit: 48

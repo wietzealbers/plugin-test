@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "name": "English"
+  },
+  "app": {
+    "name": "Diesel prices (NL)",
+    "summary": "Diesel prices near Annen from the ANWB API, with no Home Assistant sensor.",
+    "tile_name": "Diesel price list",
+    "tile_example": "Station and diesel price in €/L"
+  },
+  "screen": {
+    "heading": "Diesel €/L",
+    "no_prices": "No diesel prices",
+    "stale": "Old data"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "name": "Nederlands"
+  },
+  "app": {
+    "name": "Dieselprijzen (NL)",
+    "summary": "Dieselprijzen rond Annen, rechtstreeks uit de ANWB API zonder Home Assistant-sensoren.",
+    "tile_name": "Dieselprijzenlijst",
+    "tile_example": "Tankstation en dieselprijs in €/L"
+  },
+  "screen": {
+    "heading": "Diesel €/L",
+    "no_prices": "Geen dieselprijzen",
+    "stale": "Oude gegevens"
+  }
+}
