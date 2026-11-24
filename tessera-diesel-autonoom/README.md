@@ -33,3 +33,6 @@ Zie de officiële [Tessera fetch-documentatie](https://github.com/MaxGramser/tes
 
 ## Privacy
 This plugin fetches public station information from `api.anwb.nl` over HTTPS. ANWB may receive the public IP address of the requesting network and standard HTTP request metadata. The plugin does not send Home Assistant entities or user-provided personal data. ANWB privacy statement: https://www.anwb.nl/jouw-privacy
+
+
+Version 0.2.2: het manifest bevat `attributes: [cloud]` voor de ANWB-netwerkverbinding.

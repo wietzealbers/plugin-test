@@ -1,11 +1,12 @@
 id: dieselprijzen
-version: 0.2.1
+version: 0.2.2
 api: "0.27"
 icon: gas-station
 maintainer: community
 license: MIT
 privacy: https://www.anwb.nl/jouw-privacy
 stage: beta
+attributes: [cloud]
 topics: [travel, money]
 requires:
   esphome: 2026.6.2
